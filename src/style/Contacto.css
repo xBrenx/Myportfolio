@@ -1,0 +1,27 @@
+.contacto {
+    font-size:  7.375rem;
+}
+
+@media(max-width: 898px){
+    .letra {
+        margin-left: 5rem;
+    }
+    .contacto {
+        font-size:  3.375rem;
+    }
+} 
+
+ @media(max-width: 665px){
+    .letra {
+        margin-left: 2rem;
+    }
+    .contacto {
+        font-size:  2.375rem;
+    }
+} 
+
+.planet:hover {
+    transition: 1s;
+    border-radius: 250px;
+    filter: drop-shadow(0 0 50px #dddddd);
+}

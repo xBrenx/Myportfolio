@@ -1,0 +1,16 @@
+.bordeo{
+    border-width: 0.5px;
+    border-color: rgb(17 24 39);
+} 
+
+@media(max-width: 767px) {
+    .bordeo{
+        border-width: none;
+    }
+}
+
+.planet:hover {
+    transition: 1s;
+    border-radius: 250px;
+    filter: drop-shadow(0 0 50px #dddddd);
+}
