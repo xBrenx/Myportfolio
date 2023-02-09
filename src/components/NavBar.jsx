@@ -34,8 +34,21 @@ const NavBar = ({setRender}) => {
     setRender(num)
   }
 
+  let scroll = window.scrollY
+
+  window.onscroll = function() {
+    let scroll2 = window.scrollY
+    let header = document.getElementById("header")
+    if(scroll >= scroll2){
+      header.style.top = "0";
+    }else{
+      header.style.top = "-100px";
+    }
+    scroll = scroll2;
+  }
+
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white fixed translate-y-6 transform-gpu duration-300 z-20">
+    <header id="header" className="flex justify-between items-center w-full h-20 px-4 text-white fixed translate-y-6 transform-gpu duration-300 z-20 header">
       <motion.div {...apearNav}>
             <img src={image} alt="logo" className='m-9' />
         </motion.div>
@@ -96,7 +109,7 @@ const NavBar = ({setRender}) => {
               </li>
         </motion.ul>
       )}
-    </div>
+    </header>
   );
 };
 

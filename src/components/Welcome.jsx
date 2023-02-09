@@ -3,6 +3,8 @@ import "../style/Welcome.css"
 import image from "../assets/images/image-moon.png"
 import { motion } from 'framer-motion'
 
+import {GiStarSwirl} from "react-icons/gi"
+
 export default function Welcome() {
 
   const apearLeft = {
@@ -31,15 +33,17 @@ export default function Welcome() {
     <div className='mr-12'>
     <div className='flex h-full pt-64 max-w-lg ml-44 letra'>
         <motion.div {...apearRight} className='rounded p-2 z-10 break-words sm:max-w-xs backdrop-blur-sm border-[0.5px] border-gray-900'>
-        <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">Bienvenido a mi
+        <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">Bienvenido a mi 
       <span className="d-block ff-serif text-white portfolio">portfolio</span></h1>
+
+      <div className='flex items-center'>
+      <GiStarSwirl size={25}  color="#ffffff"/> 
+      <span className="d-block ff-serif text-white full">Fullstack Developer </span>
+      </div>
       
-      <p className='max-w-lg'>Let’s face it; if you want to go to space, you might as well genuinely go to 
-      outer space and not hover kind of on the edge of it. Well sit back, and relax 
-      because we’ll give you a truly out of this world experience! </p>
         </motion.div>
 
-        <motion.img {...apearLeft} src={image} alt='moon' className='planet z-0 ml-[-10rem]  h-[50%] mt-40'/>
+        <motion.img {...apearLeft} src={image} alt='moon' className='planet z-0 ml-[-8rem]  h-[50%] mt-8'/>
     </div>
     </div>
   )

@@ -18,7 +18,7 @@ export default function Iconos() {
       } 
 
   return (
-    <motion.div {...apearTop} className='flex flex-col p-4 justify-center mx-auto z-20'>
+    <motion.div {...apearTop} className='flex flex-col p-4 justify-center mx-auto z-10'>
         <a href="https://github.com/xBrenx"><FiGithub size={22}  color="#ffffff"/></a>
         <a href="https://www.linkedin.com/in/brenda-panes/"><FiLinkedin className='my-10' size={22}  color="#ffffff"/></a>
         <a href="https://api.whatsapp.com/send?phone=5491157211697"><ImWhatsapp size={22}  color="#ffffff"/></a>

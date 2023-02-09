@@ -3,12 +3,20 @@
     font-size:  7.375rem;
 }
 
+.full {
+    font-size:  4.375rem;
+}
+
 @media(max-width: 898px){
     .letra {
         margin-left: 5rem;
     }
     .portfolio {
         font-size:  3.375rem;
+    }
+
+    .full {
+        font-size:  2.375rem;
     }
 } 
 
@@ -17,6 +25,9 @@
         margin-left: 2rem;
     }
     .portfolio {
+        font-size:  2.375rem;
+    }
+    .full {
         font-size:  2.375rem;
     }
 } 

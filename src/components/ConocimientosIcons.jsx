@@ -94,12 +94,12 @@ const datos = [
     <div>
         
         <div>
-      <span  className='d-block fs-600 ff-serif text-white'> Algunas tecnologias son:</span>
+      <span  className='d-block fs-600 ff-serif text-white'> Algunas tecnologias y herramientas son:</span>
      
       <div className='grid grid-rows-4 grid-flow-col gap-2'>
         {
         datos.map(e => (
-            <div key={e.id} className='flex justify-center items-center w-36 h-36 text-center rounded-lg background'>
+            <div key={e.id} className='flex justify-center items-center w-36 h-36 text-center rounded-lg background bg-gradient-to-r to-transparent from-slate-500'>
             <a href={e.href} target="_blank" rel="noreferrer"> 
         <img className='hover:scale-110 transition-transform' src={e.src} alt={e.alt} width={e.width} height={e.height}/> 
         </a>

@@ -40,7 +40,7 @@ export default function conocimientos() {
 
         </motion.div>
 
-        <motion.img {...apearLeft} src={image} alt='moon' className='planet z-0 ml-[-15rem]  h-[50%] mt-40'/>
+        <motion.img {...apearLeft} src={image} alt='moon' className='planet z-0 ml-[-15rem]  h-[50%] mt-8'/>
     </div>
     </div>
   )

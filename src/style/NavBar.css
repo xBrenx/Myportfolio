@@ -3,6 +3,10 @@
     border-color: rgb(17 24 39);
 } 
 
+.header {
+    background-color: var(--main-color);
+}
+
 @media(max-width: 767px) {
     .bordeo{
         border-width: none;

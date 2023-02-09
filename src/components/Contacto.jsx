@@ -81,7 +81,7 @@ export default function Contacto() {
         </motion.div>
         <Iconos />
 
-        <motion.img {...apearLeft} src={image} alt='moon' className='planet z-0 ml-[-10rem] h-[50%] mt-40'/>
+        <motion.img {...apearLeft} src={image} alt='moon' className='planet z-0 ml-[-8rem] h-[50%] mt-8'/>
     </div>
 
    
