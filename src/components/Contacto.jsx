@@ -37,12 +37,12 @@ export default function Contacto() {
       
       <p className='max-w-lg'>Si querés saber más sobre mi te invito a escribirme a mi correo o alguna de las siguientes redes sociales.</p>
 
-      {/* FORMULARIOOOOO from-transparent to-black */}
-      <div
+      {/* FORMULARIO*/}
+      {/* <div
       name="contact"
       className="w-full h-screen bg-gradient-to-b  p-4 text-white"
-    >
-      <div className="flex flex-col p-4 justify-center mx-auto h-full">
+    > */}
+      <div className="grid flex-col p-4 mx-auto h-full">
 
       
           <form
@@ -73,11 +73,11 @@ export default function Contacto() {
               Hablemos
             </button>
           </form>
-        </div>
+        {/* </div> */}
 
     </div>
 
-      {/* FORMULARIO0000000 */}
+      {/* FORMULARIO */}
         </motion.div>
         <Iconos />
 
