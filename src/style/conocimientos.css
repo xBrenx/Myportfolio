@@ -2,16 +2,29 @@
     font-size:  6.375rem;
 }
 
+
 @media(max-width: 898px){
     .letra {
         margin-left: 5rem;
     }
     .conocimientos {
-        font-size:  3.375rem;
+        font-size:  2.375rem;
     }
 } 
 
- @media(max-width: 665px){
+@media(max-width: 760px){
+    .conocimientos{
+        font-size:  3.275rem;
+    }
+}
+
+@media(max-width: 1280px){
+    .conocimientos{
+        font-size:  4.375rem;
+    }
+}
+
+@media(max-width: 665px){
     .letra {
         margin-left: 2rem;
     }

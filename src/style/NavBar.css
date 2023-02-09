@@ -3,15 +3,20 @@
     border-color: rgb(17 24 39);
 } 
 
+.nav {
+    display: none;
+}
+
 .header {
     background-color: var(--main-color);
 }
 
-@media(max-width: 767px) {
-    .bordeo{
-        border-width: none;
+@media (min-width: 767px){
+    .nav {
+        display: flex
     }
 }
+
 
 .planet:hover {
     transition: 1s;

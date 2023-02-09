@@ -32,7 +32,7 @@ export default function conocimientos() {
   return (
     <div className='mr-12'>
     <div className='flex h-full pt-64 max-w-lg ml-44 letra'>
-        <motion.div {...apearRight} className='rounded p-2 z-10 break-words sm:max-w-xs backdrop-blur-sm border-[0.5px] border-gray-900'>
+        <motion.div {...apearRight} className='rounded p-2 z-10 break-words md:max-w-md sm:max-w-xs lg:max-w-xl xl:max-w-3xl backdrop-blur-sm border-[0.5px] border-gray-900'>
         <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">Algunos de mis
       <span className="d-block ff-serif text-white conocimientos">conocimientos</span></h1>
 
@@ -40,7 +40,7 @@ export default function conocimientos() {
 
         </motion.div>
 
-        <motion.img {...apearLeft} src={image} alt='moon' className='planet z-0 ml-[-15rem]  h-[50%] mt-8'/>
+        <motion.img {...apearLeft} src={image} alt='moon' className='planet z-0 ml-[-15rem] xl:ml-[-4rem]  h-[50%] mt-8'/>
     </div>
     </div>
   )

@@ -6,9 +6,11 @@ module.exports = {
       signature: ["Great Vibes"],
     },
     screens: {
-      'md': {'min': '767px'},
       'sm': {'max': '639px'},
-      // => @media (max-width: 639px) { ... }
+      'md': {'max': '767px'},
+      'lg': {'max':'1024px'},
+      'xl':  {'max':'1280px'},
+      '2xl': {'max':'1536px'}
     }
   },
   plugins: [],

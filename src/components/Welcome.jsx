@@ -38,7 +38,10 @@ export default function Welcome() {
 
       <div className='flex items-center'>
       <GiStarSwirl size={25}  color="#ffffff"/> 
+      <div>
+      <span className="d-block ff-serif text-white full">Brenda Panes </span>
       <span className="d-block ff-serif text-white full">Fullstack Developer </span>
+      </div>
       </div>
       
         </motion.div>
