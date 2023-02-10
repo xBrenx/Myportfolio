@@ -34,20 +34,27 @@ const NavBar = ({setRender}) => {
     setRender(num)
   }
 
-  let scroll = window.scrollY
+  const closeNav = (num) => {
+    setRender(num)
+    console.log(nav);
+    setNav(false)
+  }
 
+  let scroll = window.scrollY
+  console.log(scroll);
   window.onscroll = function() {
     let scroll2 = window.scrollY
+    console.log(scroll2);
     let header = document.getElementById("header")
-    if(scroll >= scroll2){
-      header.style.top = "0";
-    }else{
+    if(scroll2 > 150){
       header.style.top = "-100px";
+    }else{
+      header.style.top = "0";
     }
   }
 
   //"flex justify-between items-center w-full h-20 px-4 text-white fixed top-0 z-20 header"
-
+  console.log(nav);
   return (
     <header id="header" className="flex justify-between items-center w-full h-20 text-white fixed top-0 translate-y-1 transform-gpu duration-300 z-20 header">
       <motion.div {...apearNav}>
@@ -85,28 +92,28 @@ const NavBar = ({setRender}) => {
       >
         {nav ? <FaTimes  size={30} /> : <FaBars size={30} /> }
       </motion.div>
-
+    
       {nav && (
         <motion.ul {...apearNavLeft}
          className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen backdrop-blur-md text-gray-500 gap-4">
             <li>
                 <p className="ff-sans-cond uppercase text-white letter-spacing-2 cursor-pointer" 
-              href='#home' onClick={()=>{ seteo(0)}}><span className="font-bold">01</span> Home</p>
+              href='#home' onClick={()=>{ closeNav(0)}}><span className="font-bold">01</span> Home</p>
               </li>
            
               <li>
                 <p className="ff-sans-cond uppercase text-white letter-spacing-2 cursor-pointer" 
-              href='#home' onClick={()=>{ seteo(1)}}><span className="font-bold">02</span> Proyectos</p>
+              href='#home' onClick={()=>{ closeNav(1)}}><span className="font-bold">02</span> Proyectos</p>
               </li>
            
               <li>
                 <p className="ff-sans-cond uppercase text-white letter-spacing-2 cursor-pointer" 
-              href='#home' onClick={()=>{ seteo(2)}}><span className="font-bold">03</span> Conocimiento</p>
+              href='#home' onClick={()=>{ closeNav(2)}}><span className="font-bold">03</span> Conocimiento</p>
               </li>
            
               <li>
                 <p className="ff-sans-cond uppercase text-white letter-spacing-2 cursor-pointer h-full" 
-              href='#home' onClick={()=>{ seteo(3)}}><span className="font-bold">04</span> Contacto</p>
+              href='#home' onClick={()=>{ closeNav(3)}}><span className="font-bold">04</span> Contacto</p>
               </li>
         </motion.ul>
       )}

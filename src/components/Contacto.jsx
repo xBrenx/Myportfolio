@@ -48,7 +48,7 @@ export default function Contacto() {
           <form
             action="https://getform.io/f/f73252c9-5487-4bbb-9982-f4b954002d09"
             method="POST"
-            className=" flex flex-col w-full md:w-1/2"
+            className=" flex flex-col w-full"
           >
             <input
               type="text"
