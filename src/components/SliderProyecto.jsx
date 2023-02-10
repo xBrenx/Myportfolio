@@ -32,7 +32,7 @@ export default function SliderProyecto() {
           },
           {
             id: 2,
-            title: "Bookturn (grupal)",
+            title: "Bookturn",
             img_url: `${image2}`,
             gitHub: "https://github.com/riveroide/PFBOOKTURNFRONTEND",
             linkedin: "https://www.linkedin.com/in/brenda-panes/"

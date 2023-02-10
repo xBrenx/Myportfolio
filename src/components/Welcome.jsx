@@ -34,7 +34,7 @@ export default function Welcome() {
     <div className='flex h-full pt-64 max-w-lg ml-44 letra'>
         <motion.div {...apearRight} className='rounded p-2 z-10 break-words sm:max-w-xs backdrop-blur-sm border-[0.5px] border-gray-900'>
         <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">Bienvenido a mi 
-      <span className="d-block ff-serif text-white portfolio">portfolio</span></h1>
+      <span className="d-block ff-serif text-white portfolio">portafolio</span></h1>
 
       <div className='flex items-center'>
       <GiStarSwirl size={25}  color="#ffffff"/> 
