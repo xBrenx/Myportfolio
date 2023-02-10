@@ -3,10 +3,6 @@
     border-color: rgb(17 24 39);
 } 
 
-.nav {
-    display: none;
-}
-
 .header {
     background-color: var(--main-color);
 }

@@ -35,7 +35,7 @@ export default function Contacto() {
         <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">Medios de
       <span className="d-block ff-serif text-white contacto">contacto</span></h1>
       
-      <p className='max-w-lg'>Si querés saber más sobre mi te invito a escribirme a mi correo o alguna de las siguientes redes sociales.</p>
+      <p className='max-w-lg'>Si querés saber más sobre mi, te invito a contactarme.</p>
 
       {/* FORMULARIO*/}
       {/* <div

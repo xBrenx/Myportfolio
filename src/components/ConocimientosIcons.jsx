@@ -46,13 +46,6 @@ const datos = [
         width:"70",
         height:"70"
     },{
-        id: 5,
-        href: "https://tailwindcss.com/",
-        src: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-        alt: "tailwind",
-        width:"70",
-        height:"70"
-    },{
         id: 6,
         href: "https://expressjs.com",
         src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
@@ -85,6 +78,13 @@ const datos = [
         href: "https://www.framer.com/?",
         src: "https://seeklogo.com/images/F/framer-motion-logo-DA1E33CAA1-seeklogo.com.png",
         alt: "framer-motion",
+        width:"70",
+        height:"70"
+    },{
+        id: 12,
+        href: "https://tailwindcss.com/",
+        src: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+        alt: "tailwind",
         width:"70",
         height:"70"
     }
