@@ -41,10 +41,10 @@ const NavBar = ({setRender}) => {
   }
 
   let scroll = window.scrollY
-  console.log(scroll);
+
   window.onscroll = function() {
     let scroll2 = window.scrollY
-    console.log(scroll2);
+ 
     let header = document.getElementById("header")
     if(scroll2 > 150){
       header.style.top = "-100px";
@@ -53,15 +53,16 @@ const NavBar = ({setRender}) => {
     }
   }
 
+  
   //"flex justify-between items-center w-full h-20 px-4 text-white fixed top-0 z-20 header"
-  console.log(nav);
+  
   return (
     <header id="header" className="flex justify-between items-center w-full h-20 text-white fixed top-0 translate-y-1 transform-gpu duration-300 z-20 header">
       <motion.div {...apearNav}>
             <img src={image} alt="logo" className='m-9' />
         </motion.div>
 
-      <motion.div {...apearNav} className="backdrop-blur-md ml-64 p-4 border-[0.5px] border-gray-900 md:backdrop-blur-0 md:hidden md:border-0">
+      <motion.div {...apearNav} className="fixed backdrop-blur-md right-16 ml-64 p-4 border-[0.5px] border-gray-900 md:backdrop-blur-0 md:hidden md:border-0">
       <ul className="flex gap-4 mr-14 backdrop-blur-md h-full">
       <li>
                 <p className="ff-sans-cond uppercase text-white letter-spacing-2 cursor-pointer" 
