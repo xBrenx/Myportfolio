@@ -4,9 +4,9 @@
 
 
 @media(max-width: 898px){
-    .letra {
+    /* .letra {
         margin-left: 5rem;
-    }
+    } */
     .conocimientos {
         font-size:  2.375rem;
     }
@@ -25,16 +25,19 @@
 }
 
 @media(max-width: 665px){
-    .letra {
+    /* .letra {
         margin-left: 2rem;
-    }
+    } */
     .conocimientos {
         font-size:  2.375rem;
     }
 } 
 
-.planet:hover {
-    transition: 1s;
-    border-radius: 250px;
+.satelite {
+    filter: drop-shadow(0 0 0px #dddddd);
+    transition: all 1s ease-in-out;
+}
+
+.satelite:hover {
     filter: drop-shadow(0 0 50px #dddddd);
 }

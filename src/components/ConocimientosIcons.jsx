@@ -56,21 +56,21 @@ const datos = [
         id: 7,
         href: "https://nodejs.org",
         src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" ,
-        alt: "nodejs",
+        alt: "node.js",
         width:"70",
         height:"70"
     },{
         id: 8,
         href: "https://www.mysql.com/",
         src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-        alt: "mysql",
+        alt: "MySQL",
         width:"70",
         height:"70"
     },{
         id: 9,
         href: "https://www.postgresql.org",
         src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
-        alt: "postgresql",
+        alt: "postgreSQL",
         width:"70",
         height:"70"
     },{
@@ -96,13 +96,14 @@ const datos = [
         <div>
       <span  className='d-block fs-600 ff-serif text-white'> Algunas tecnologias y herramientas son:</span>
      
-      <div className='grid grid-rows-4 grid-flow-col gap-2'>
+      <div className='grid grid-rows-6 lg:grid-rows-4 grid-flow-col gap-2'>
         {
         datos.map(e => (
-            <div key={e.id} className='flex justify-center items-center w-36 h-36 sm:w-20 sm:h-20 text-center rounded-lg background bg-gradient-to-r to-transparent from-slate-500'>
+            <div key={e.id} className='flex justify-center items-center w-52 h-20 text-center rounded-lg background bg-gradient-to-r to-transparent from-slate-500'>
             <a href={e.href} target="_blank" rel="noreferrer"> 
         <img className='hover:scale-110 transition-transform' src={e.src} alt={e.alt} width={e.width} height={e.height}/> 
         </a>
+        <p className='m-2'>{e.alt}</p>
             </div>
         
         ))

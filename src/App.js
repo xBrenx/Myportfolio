@@ -22,7 +22,7 @@ function App() {
     <div>
       <NavBar setRender={setRender}/>
 
-      <div>
+      <div className='flex mt-56 mb-32 2xl:w-11/12 justify-center'>
       {
         toRender[render]
       }

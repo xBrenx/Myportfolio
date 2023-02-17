@@ -30,18 +30,20 @@ export default function conocimientos() {
   } 
 
   return (
-    <div className='mr-12'>
-    <div className='flex h-full pt-64 max-w-lg ml-44 letra'>
-        <motion.div {...apearRight} className='rounded p-2 z-10 break-words md:max-w-md sm:max-w-xs lg:max-w-xl xl:max-w-3xl backdrop-blur-sm border-[0.5px] border-gray-900'>
-        <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">Algunos de mis
-      <span className="d-block ff-serif text-white conocimientos">conocimientos</span></h1>
+    
+    <div className='flex sm:m-8 letra'>
+        <motion.div {...apearRight} className='p-1 lg:p-4 2xl:p-2 rounded z-10 break-words backdrop-blur-[2px] border-[0.5px] border-gray-900'>
+        <h1 className="text-accent text-2xl lg:text-4xl xl:text-5xl ff-sans-cond uppercase letter-spacing-1">Algunos de mis
+      <span className="d-block text-4xl md:text-[4rem] lg:text-7xl xl:text-8xl py-4 ff-serif text-white">conocimientos</span></h1>
 
       <ConocimientosIcons />
 
         </motion.div>
 
-        <motion.img {...apearLeft} src={image} alt='moon' className='planet z-0 ml-[-15rem] xl:ml-[-4rem]  h-[50%] mt-8'/>
+        <motion.div {...apearLeft} className='satelite z-0 max-h-fit mt-8 min-w-[5rem] 2xl:min-w-fit xl:h-[100%] 2xl ml-[-22rem] sm:ml-[-15rem] lg:ml-[-6rem] 2xl:ml-[-2rem]'>
+          <img src={image} alt='europa'/>
+          </motion.div>
     </div>
-    </div>
+    
   )
 }

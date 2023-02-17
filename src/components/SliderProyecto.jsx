@@ -44,7 +44,7 @@ export default function SliderProyecto() {
     ]
 
   return (
-    <section className=" max-w-lg sm:max-w-[18rem] flex justify-center">
+    <section className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl flex justify-center">
      
       <Swiper
        spaceBetween={30}

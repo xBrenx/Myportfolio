@@ -62,7 +62,7 @@ const NavBar = ({setRender}) => {
             <img src={image} alt="logo" className='m-9' />
         </motion.div>
 
-      <motion.div {...apearNav} className="fixed backdrop-blur-md right-16 ml-64 p-4 border-[0.5px] border-gray-900 md:backdrop-blur-0 md:hidden md:border-0">
+      <motion.div {...apearNav} className="fixed md:backdrop-blur-[2px] right-16 ml-64 p-4 md:border-[0.5px] border-gray-900 backdrop-blur-0 invisible md:visible border-0">
       <ul className="flex gap-4 mr-14 backdrop-blur-md h-full">
       <li>
                 <p className="ff-sans-cond uppercase text-white letter-spacing-2 cursor-pointer" 
@@ -89,7 +89,7 @@ const NavBar = ({setRender}) => {
 
       <motion.div {...apearNav}
         onClick={() => setNav(!nav)}
-        className="invisible cursor-pointer pr-4 z-10 text-gray-500 md:visible md:z-30"
+        className="md:invisible cursor-pointer pr-4 z-10 text-gray-500 visible md:z-30"
       >
         {nav ? <FaTimes  size={30} /> : <FaBars size={30} /> }
       </motion.div>

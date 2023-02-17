@@ -7,13 +7,6 @@
     background-color: var(--main-color);
 }
 
-@media (min-width: 767px){
-    .nav {
-        display: flex
-    }
-}
-
-
 .planet:hover {
     transition: 1s;
     border-radius: 250px;

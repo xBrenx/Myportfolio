@@ -28,12 +28,12 @@ export default function Contacto() {
   } 
 
   return (
-    <div className='mr-12'>
-    <div className='flex h-full pt-64 max-w-lg ml-44 letra'>
     
-        <motion.div {...apearRight} className='rounded p-2 z-10 break-words sm:max-w-xs backdrop-blur-sm border-[0.5px] border-gray-900'>
-        <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">Medios de
-      <span className="d-block ff-serif text-white contacto">contacto</span></h1>
+    <div className='flex sm:m-8 letra'>
+    
+        <motion.div {...apearRight} className='p-1 lg:p-4 2xl:p-2 rounded z-10 break-words backdrop-blur-[2px] border-[0.5px] border-gray-900'>
+        <h1 className="text-accent text-2xl sm:text-4xl lg:text-4xl xl:text-5xl ff-sans-cond uppercase letter-spacing-1">Medios de
+      <span className="d-block text-5xl sm:text-7xl md:text-[5rem] lg:text-8xl xl:text-9xl 2xl:text-[9.5rem] py-4 ff-serif text-white">contacto</span></h1>
       
       <p className='max-w-lg'>Si querés saber más sobre mi, te invito a contactarme.</p>
 
@@ -81,10 +81,10 @@ export default function Contacto() {
         </motion.div>
         <Iconos />
 
-        <motion.img {...apearLeft} src={image} alt='moon' className='planet z-0 ml-[-8rem] h-[50%] mt-8'/>
+        <motion.div {...apearLeft} className='satelite z-0 max-h-fit mt-8 min-w-[5rem] 2xl:min-w-fit xl:h-[100%] 2xl ml-[-22rem] sm:ml-[-15rem] lg:ml-[-6rem] 2xl:ml-[-2rem]'>
+        <img src={image} alt='mars'/>
+        </motion.div>
     </div>
 
-   
-    </div>
   )
 }
