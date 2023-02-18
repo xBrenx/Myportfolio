@@ -31,7 +31,7 @@ export default function Welcome() {
 
   return (
   
-    <div className='flex sm:m-8 letra'>
+    <div className='flex m-2 sm:m-8 letra'>
         <motion.div {...apearRight} className='p-1 lg:p-4 2xl:p-2 rounded z-10 break-words backdrop-blur-[2px] border-[0.5px] border-gray-900'>
         <h1 className="text-accent text-2xl sm:text-4xl lg:text-4xl xl:text-5xl ff-sans-cond uppercase letter-spacing-1">Bienvenido a mi 
       <span className="d-block text-5xl sm:text-7xl md:text-[5rem] lg:text-8xl xl:text-9xl 2xl:text-[9.5rem] py-4 ff-serif text-white">portafolio</span></h1>

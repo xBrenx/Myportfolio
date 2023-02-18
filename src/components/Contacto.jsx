@@ -29,7 +29,7 @@ export default function Contacto() {
 
   return (
     
-    <div className='flex sm:m-8 letra'>
+    <div className='flex m-2 sm:m-8 letra'>
     
         <motion.div {...apearRight} className='p-1 lg:p-4 2xl:p-2 rounded z-10 break-words backdrop-blur-[2px] border-[0.5px] border-gray-900'>
         <h1 className="text-accent text-2xl sm:text-4xl lg:text-4xl xl:text-5xl ff-sans-cond uppercase letter-spacing-1">Medios de
