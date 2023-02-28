@@ -94,14 +94,14 @@ const datos = [
     <div>
         
         <div>
-      <span  className='d-block fs-600 ff-serif text-white'> Algunas tecnologias y herramientas son:</span>
+      <span  className='block fs-600 ff-serif text-white'> Algunas tecnologias y herramientas son:</span>
      
       <div className='grid grid-rows-6 lg:grid-rows-4 grid-flow-col gap-2'>
         {
         datos.map(e => (
-            <div key={e.id} className='flex justify-center items-center w-52 h-20 text-center rounded-lg background bg-gradient-to-r to-transparent from-slate-500'>
+            <div key={e.id} className='flex justify-center items-center w-32 h-15 sm:w-52 sm:h-20 text-center rounded-lg background bg-gradient-to-r to-transparent from-slate-500'>
             <a href={e.href} target="_blank" rel="noreferrer"> 
-        <img className='hover:scale-110 transition-transform' src={e.src} alt={e.alt} width={e.width} height={e.height}/> 
+        <img className='hover:scale-110 transition-transform' src={e.src} alt={e.alt} width={window.outerWidth > 450? e.width : 40} height={window.outerWidth > 450? e.height : 40}/> 
         </a>
         <p className='m-2'>{e.alt}</p>
             </div>

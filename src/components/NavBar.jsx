@@ -36,11 +36,8 @@ const NavBar = ({setRender}) => {
 
   const closeNav = (num) => {
     setRender(num)
-    console.log(nav);
     setNav(false)
   }
-
-  let scroll = window.scrollY
 
   window.onscroll = function() {
     let scroll2 = window.scrollY
@@ -57,7 +54,7 @@ const NavBar = ({setRender}) => {
   //"flex justify-between items-center w-full h-20 px-4 text-white fixed top-0 z-20 header"
   
   return (
-    <header id="header" className="flex justify-between items-center w-full h-20 text-white fixed top-0 translate-y-1 transform-gpu duration-300 z-20 header">
+    <header id="header" className="flex justify-between items-center w-full h-20 text-white fixed top-0 translate-y-1 duration-300 z-20 header">
       <motion.div {...apearNav}>
             <img src={image} alt="logo" className='m-9' />
         </motion.div>
@@ -89,7 +86,7 @@ const NavBar = ({setRender}) => {
 
       <motion.div {...apearNav}
         onClick={() => setNav(!nav)}
-        className="md:invisible cursor-pointer pr-4 z-10 text-gray-500 visible md:z-30"
+        className="md:invisible cursor-pointer pr-12 z-10 text-gray-500 visible md:z-30"
       >
         {nav ? <FaTimes  size={30} /> : <FaBars size={30} /> }
       </motion.div>
